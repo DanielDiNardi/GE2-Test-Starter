@@ -28,6 +28,11 @@ public class ObstacleAvoidance : SteeringBehaviour
 
     public LayerMask mask = -1;
 
+    public void Start()
+    {
+        weight = 5;
+    }
+
     public void OnEnable()
     {
         StartCoroutine(UpdateFrontFeelers());

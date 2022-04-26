@@ -22,6 +22,7 @@ public class Constrain: SteeringBehaviour
     public void Start()
     {
             center = transform.position;
+            weight = 10;
     }
 
     public override Vector3 Calculate()

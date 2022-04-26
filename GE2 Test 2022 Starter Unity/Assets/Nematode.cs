@@ -12,14 +12,14 @@ public class Nematode : MonoBehaviour
     {
         // Put your code here!
 
-        length = Random.Range(0, 20);
+        length = Random.Range(5, 20);
 
         for (int i = 0; i < length; i++)
         {
-            GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            GameObject instance = Instantiate(sphere);
-            instance.transform.parent = transform;
-            instance.transform.position = transform.position - (transform.forward * i);
+            GameObject segment = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            segment.transform.parent = transform;
+            segment.transform.position = transform.position - (transform.forward * i);
+            segment.transform.scale = new Vector3()
         }
     }
 
