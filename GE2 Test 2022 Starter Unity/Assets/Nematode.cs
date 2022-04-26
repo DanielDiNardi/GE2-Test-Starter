@@ -22,15 +22,15 @@ public class Nematode : MonoBehaviour
             segment.transform.position = transform.position - (transform.forward * i);
             segment.GetComponent<Renderer>().material = material;
 
-            // if(i == 0)
-            // {
-            //     segment.AddComponent<Boid>();
-            //     segment.AddComponent<Constrain>();
-            //     segment.AddComponent<ObstacleAvoidance>();
-            //     segment.AddComponent<NoiseWander>();
-            //     segment.AddComponent<NoiseWander>();
-            //     segment.GetComponent<NoiseWander>().axis = NoiseWander.Axis.Vertical;
-            // }
+            if(i == 0)
+            {
+                segment.AddComponent<Boid>();
+                segment.AddComponent<Constrain>();
+                segment.AddComponent<ObstacleAvoidance>();
+                segment.AddComponent<NoiseWander>();
+                segment.AddComponent<NoiseWander>();
+                segment.GetComponent<NoiseWander>().axis = NoiseWander.Axis.Vertical;
+            }
             if(i <= (length / 2))
             {
                 float frontHalf = (1f / ((float)length / 2f)) * ((float)i + 1f);
