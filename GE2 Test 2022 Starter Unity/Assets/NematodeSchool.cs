@@ -16,14 +16,14 @@ public class NematodeSchool : MonoBehaviour
     {
         // Put your code here
 
-        // for(int i = 0; i < count; i++)
-        // {
-        //     float x = Random.Range((float)-radius, (float)radius);
-        //     float y = Random.Range((float)-radius, (float)radius);
-        //     float z = Random.Range((float)-radius, (float)radius);
+        for(int i = 0; i < count; i++)
+        {
+            float x = Random.Range((float)-radius, (float)radius);
+            float y = Random.Range((float)-radius, (float)radius);
+            float z = Random.Range((float)-radius, (float)radius);
 
-        //     Instantiate(prefab, new Vector3(x, y, z), new Quaternion(transform.rotation.x, Random.Range(-1f, 1f), transform.rotation.z, 1));
-        // }
+            Instantiate(prefab, new Vector3(x, y, z), new Quaternion(transform.rotation.x, Random.Range(-1f, 1f), transform.rotation.z, 1));
+        }
     }
 
     // Update is called once per frame
